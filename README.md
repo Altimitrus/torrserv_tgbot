@@ -28,4 +28,4 @@
 + получаем ip.txt
 > masscan -p8090 подсеть -oL ip.txt --rate=5000 --wait=0
 + сканируем
-> python3 checkip.py
+> python3 check.py
