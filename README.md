@@ -8,6 +8,7 @@
 + pip install lxml
 + pip install masscan (Linux) или https://github.com/Arryboom/MasscanForWindows
 + pip install matplotlib
++ pip install pyTelegramBotAPI
 
 ## bot.py
 
