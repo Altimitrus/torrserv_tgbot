@@ -14,6 +14,7 @@ import matplotlib.pyplot as plt
 # use masscan on windows and linux
 def masscan(target):
     global program
+    global system
     startupinfo = None
     if system == 'Windows':
         startupinfo = subprocess.STARTUPINFO()
@@ -26,6 +27,7 @@ def masscan(target):
 
 
 def hidden_launch_python(script):
+    global system
     if system == 'Windows':
         process = subprocess.Popen([shutil.which('python'), script], stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                    creationflags=subprocess.CREATE_NO_WINDOW)
